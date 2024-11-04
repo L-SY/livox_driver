@@ -6,3 +6,15 @@
 
 `livox_ros_driver2`  is change from https://github.com/Livox-SDK/livox_ros_driver2, Adaptation to livox-SDK2 and changes ros1 compilation to use catkin build instead of catkin_make.
 
+
+#### Build
+
+```bash
+git submodule update --init
+cd /livox_driver/Livox-SDK2
+mkdir build && cd build
+cmake ..
+make install
+cd ../..
+catkin build
+```
